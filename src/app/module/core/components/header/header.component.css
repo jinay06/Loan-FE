@@ -1,3 +1,9 @@
 .logo {
-    width: 120px;
+    width: 80px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }

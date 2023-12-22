@@ -3,21 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SignupComponent } from './module/core/components/signup/signup.component';
 import { LoginComponent } from './module/core/components/login/login.component';
-import { HeaderComponent } from './module/core/components/header/header.component';
-import { FooterComponent } from './module/core/components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { coreModule } from './module/core/core.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './module/feature/home/home.component';
+import { BlogcompoComponent } from './module/feature/blogcompo/blogcompo.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    FooterComponent
+    HomeComponent,
+    BlogcompoComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -25,9 +25,7 @@ import { RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     coreModule,
     MatSlideToggleModule,
-    HeaderComponent,
     HttpClientModule,
-    SignupComponent,
     RouterModule
   ],
   providers: [],
